@@ -12,7 +12,7 @@
   {
     "url" : "https://github.com/Wandalen/wParser/issues"
   },
-  "dependencies" : { "wTools" : "" },
-  "devDependencies" : { "wTesting" : "", "wparser" : "file:." },
+  "dependencies" : { "wTools" : "alpha" },
+  "devDependencies" : { "wparser" : "file:.", "wTesting" : "alpha" },
   "keywords" : [ "wTools" ]
 }
