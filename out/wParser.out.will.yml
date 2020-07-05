@@ -151,6 +151,7 @@ module:
           export: 1
         path:
           - ../proto
+          - ../proto/Integration.test.s
           - ../proto/dwtools
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
@@ -1445,6 +1446,4 @@ module:
       ../.im.will.yml:
         hash: 3e9ed02b9bd469d6f46477d5db587d2f
         size: 4560
-      wParser.out.will.yml:
-        hash: 835cc5059c205d50305f6cbea1c9786e
-        size: 36436
+      wParser.out.will.yml: *ref_0
