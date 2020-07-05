@@ -1,5 +1,5 @@
 
-# wParser -- Experimental! [![Build Status](https://travis-ci.org/Wandalen/wParser.svg?branch=master)](https://travis-ci.org/Wandalen/wParser)
+# wParser -- Experimental! [![Status](https://github.com/Wandalen/wParser/workflows/Test/badge.svg)](https://github.com/Wandalen/wParser}/actions?query=workflow%3ATest)
 
 ___
 
