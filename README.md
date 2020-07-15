@@ -6,6 +6,6 @@ ___
 ## Try out
 ```
 npm install
-node sample/Sample.js
+node sample/Sample.s
 ```
 
