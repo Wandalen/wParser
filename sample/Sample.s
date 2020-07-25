@@ -3,5 +3,5 @@ let _ = require( 'wparser' );
 
 /**/
 
-___
+console.log( '___ not implemented ___' );
 
