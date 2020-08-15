@@ -1,18 +1,1 @@
-{
-  "name" : "wparser",
-  "version" : "0.3.15",
-  "description" : "___",
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
-  "license" : "MIT",
-  "main" : "proto/wtools/Tools.s",
-  "files" : [ "proto/wtools/___", "proto/wtools/Tools.s" ],
-  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen .build proto" },
-  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wParser.git" },
-  "bugs" :
-  {
-    "url" : "https://github.com/Wandalen/wParser/issues"
-  },
-  "dependencies" : { "wTools" : "" },
-  "devDependencies" : { "wTesting" : "", "wparser" : "file:." },
-  "keywords" : [ "wTools" ]
-}
+{"name":"wparser","version":"0.3.16","description":"___","author":"Kostiantyn Wandalen <wanalen@01.school>","license":"MIT","main":"proto/wtools/Tools.s","files":["proto/wtools/___","proto/wtools/Tools.s"],"scripts":{"test":"wtest .run 'proto/**' rapidity:-3","docgen":"wdocgen .build proto"},"repository":{"type":"git","url":"https://github.com/Wandalen/wParser.git"},"bugs":{"url":"https://github.com/Wandalen/wParser/issues"},"dependencies":{"wTools":""},"devDependencies":{"wTesting":"","wparser":"file:."},"keywords":["wTools"]}
