@@ -2,15 +2,12 @@ format: outwillfile-2.0
 root:
   - wParser.out
 consistency:
-  wParser.out.will.yml: &ref_0
-    hash: 2a0bed8c84721c6cd1503bdd57aab6e8
-    size: 37221
-  ../.ex.will.yml: &ref_1
+  ../.ex.will.yml: &ref_0
     hash: 20ebd73b562d16e357f62e107476d47f
     size: 1655
-  ../.im.will.yml: &ref_2
-    hash: 987780a70235942e9a2b97b7e4b63a93
-    size: 4722
+  ../.im.will.yml: &ref_1
+    hash: f69e1a27dfc6c4742f4af243d5b81724
+    size: 4682
 module:
   wParser.out:
     about:
@@ -19,19 +16,19 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - tools
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wparser
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -682,24 +679,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -788,9 +767,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wParser.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wParser
@@ -798,21 +776,13 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - tools
-        - wTools
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wparser
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -1468,8 +1438,5 @@ module:
         hash: 20ebd73b562d16e357f62e107476d47f
         size: 1655
       ../.im.will.yml:
-        hash: 987780a70235942e9a2b97b7e4b63a93
-        size: 4722
-      wParser.out.will.yml:
-        hash: 2a0bed8c84721c6cd1503bdd57aab6e8
-        size: 37221
+        hash: f69e1a27dfc6c4742f4af243d5b81724
+        size: 4682
