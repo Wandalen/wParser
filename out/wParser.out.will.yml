@@ -6,8 +6,8 @@ consistency:
     hash: 20ebd73b562d16e357f62e107476d47f
     size: 1655
   ../.im.will.yml: &ref_1
-    hash: f69e1a27dfc6c4742f4af243d5b81724
-    size: 4682
+    hash: 5824da10cab7d4fb394a303035063f64
+    size: 4686
 module:
   wParser.out:
     about:
@@ -138,7 +138,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - ../proto/wtools/Tools.s
+          - ../proto/node_modules/Tools
           - ../proto/node_modules/wparser
       exported.dir.proto.export:
         criterion:
@@ -155,9 +155,9 @@ module:
           - ../proto
           - ../proto/Integration.test.ss
           - ../proto/node_modules
+          - ../proto/node_modules/Tools
           - ../proto/node_modules/wparser
           - ../proto/wtools
-          - ../proto/wtools/Tools.s
           - ../proto/wtools/abase
           - ../proto/wtools/amid
           - ../proto/wtools/atop
@@ -890,7 +890,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - proto/wtools/Tools.s
+          - proto/node_modules/Tools
           - proto/node_modules/wparser
     submodule:
       wTools:
@@ -1438,5 +1438,5 @@ module:
         hash: 20ebd73b562d16e357f62e107476d47f
         size: 1655
       ../.im.will.yml:
-        hash: f69e1a27dfc6c4742f4af243d5b81724
-        size: 4682
+        hash: 5824da10cab7d4fb394a303035063f64
+        size: 4686
